@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg's Store</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Greg's Store</h1>
+        <nav>
+            <button class="menu-btn">☰</button>
+        </nav>
+    </header>
+    <section class="banner">
+        <h2>Best Chairs in T.O</h2>
+    </section>
+    <section class="products">
+        <article class="product-card">
+            <model-viewer src="./models/chair-web.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="./images/env-image.jpg" auto-rotate camera-controls></model-viewer>
+
+            <model-viewer src="./models/chair-model.glb" 
+                          loading="lazy" 
+                          poster="./images/chair-Camera.png" 
+                          ar ar-modes="webxr scene-viewer quick-look" 
+                          environment-image="./images/env-image.jpg" 
+                          auto-rotate 
+                          camera-controls>
+                <!-- Fallback content for browsers that do not support <model-viewer> -->
+                <div slot="fallback">
+                    <img src="./images/chair-Camera.png" alt="Product Image">
+                </div>
+            </model-viewer>            <h3>Chair 1</h3>
+        </article>
+    </section>
+</body>
+
+</html>
