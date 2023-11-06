@@ -1,0 +1,358 @@
+{
+    "asset": {
+        "copyright": "2023 (c) Adobe Inc.",
+        "generator": "Adobe Substance 3D Stager - a24c93045837040728de7b49c25565d21a4c92de",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 172264,
+            "type": "VEC3",
+            "max": [
+                3.431779384613037,
+                1.565531611442566,
+                4.8842644691467289
+            ],
+            "min": [
+                -3.4433352947235109,
+                -6.621323585510254,
+                -2.308014392852783
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 172264,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 172264,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 172264,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5125,
+            "count": 257904,
+            "type": "SCALAR",
+            "max": [
+                172263.0
+            ],
+            "min": [
+                0.0
+            ]
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 23846,
+            "type": "VEC3",
+            "max": [
+                2.8867199420928957,
+                0.3357790410518646,
+                0.8365013599395752
+            ],
+            "min": [
+                -3.1226909160614015,
+                -4.799429893493652,
+                -0.9161784052848816
+            ]
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 23846,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 23846,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 23846,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5125,
+            "count": 35712,
+            "type": "SCALAR",
+            "max": [
+                23845.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 2067168,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2067168,
+            "byteLength": 2067168,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 4134336,
+            "byteLength": 2756224,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 6890560,
+            "byteLength": 1378112,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8268672,
+            "byteLength": 1031616,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 9300288,
+            "byteLength": 286152,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 9586440,
+            "byteLength": 286152,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 9872592,
+            "byteLength": 381536,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10254128,
+            "byteLength": 190768,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10444896,
+            "byteLength": 142848,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 10587744,
+            "uri": "chair-web_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.0002242726768599823,
+                "yfov": 0.3995896875858307,
+                "zfar": 12.334997177124024,
+                "aspectRatio": 1.7777777910232545
+            },
+            "type": "perspective",
+            "name": "working_cam"
+        }
+    ],
+    "images": [
+        {
+            "name": "base_color_image_texture",
+            "uri": "chair-web_images/base_color_image_texture.jpg",
+            "mimeType": "image/jpeg"
+        },
+        {
+            "name": "ambient_occlusion_image_texture_roughness_image_texture",
+            "uri": "chair-web_images/ambient_occlusion_image_texture_roughness_image_texture.png",
+            "mimeType": "image/png"
+        },
+        {
+            "name": "normal_image_texture",
+            "uri": "chair-web_images/normal_image_texture.png",
+            "mimeType": "image/png"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.019382361322641374,
+                    0.04817182198166847,
+                    0.4072403013706207,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.30000001192092898
+            },
+            "name": "1950s Upholstered Lounge Chair_Denim01_IST_Fab2",
+            "doubleSided": true
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            },
+            "normalTexture": {
+                "index": 2
+            },
+            "occlusionTexture": {
+                "index": 1
+            },
+            "name": "Wax _ Patina_material",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "1950s Upholstered Lounge Chair_00_n3d",
+            "primitives": [
+                {
+                    "attributes": {
+                        "TEXCOORD_0": 3,
+                        "TANGENT": 2,
+                        "NORMAL": 1,
+                        "POSITION": 0
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "1950s Upholstered Lounge Chair_03_n3d",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 5,
+                        "NORMAL": 6,
+                        "TANGENT": 7,
+                        "TEXCOORD_0": 8
+                    },
+                    "indices": 9,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                0.550000011920929,
+                0.3199999928474426,
+                0.550000011920929
+            ],
+            "rotation": [
+                -0.12059047073125839,
+                0.379409521818161,
+                0.04995020851492882,
+                0.9159756302833557
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "camera": 0,
+            "name": "working_cam_n3d"
+        },
+        {
+            "children": [
+                2,
+                3
+            ],
+            "translation": [
+                -0.17745764553546906,
+                0.011240052990615368,
+                0.26618528366088869
+            ],
+            "rotation": [
+                -0.4330793619155884,
+                0.5562798976898193,
+                0.5596221089363098,
+                0.43568113446235659
+            ],
+            "scale": [
+                0.7743384838104248,
+                0.77433842420578,
+                0.7743381261825562
+            ],
+            "name": "1950s Upholstered Lounge Chair_n3d"
+        },
+        {
+            "translation": [
+                0.005778220947831869,
+                2.5150506496429445,
+                3.9304893016815187
+            ],
+            "mesh": 0,
+            "name": "1950s Upholstered Lounge Chair_00_n3d"
+        },
+        {
+            "translation": [
+                0.1030767410993576,
+                1.0008478164672852,
+                0.9135497808456421
+            ],
+            "mesh": 1,
+            "name": "1950s Upholstered Lounge Chair_03_n3d"
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "textures": [
+        {
+            "name": "base_color_image_texture",
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "name": "ambient_occlusion_image_texture_roughness_image_texture",
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "name": "normal_image_texture",
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "scene": 0
+}
