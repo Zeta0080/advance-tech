@@ -1,86 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greg's Store</title>
+    <title>Sunnyday's Store</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>   
     <div class="hero">
-        <h1>Greg's Store</h1>
+        <h1>Sunnyday's Store</h1>
     </div>
     <section class="products">
         <h2>Chairs Gallery</h2>
         <div class="products-gallery">
+            <!-- Chair 1 -->
             <div class="product-card">
-                <img src="./images/chair-Camera.png" alt="Chair">
-                <h3>Chair 1</h3>
-            </div>
-            <div class="product-card">
-
-                <model-viewer src="./models/chair-blue.glb"
-                    alt="A 3D model of an astronaut"
+                <model-viewer src="./models/Chair_alum.glb"
+                    alt="Chair Alum"
                     ar
                     auto-rotate
-                    camera-controls></model-viewer>
-                <model-viewer src="./models/chair-blue.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-                    <div class="progress-bar hide" slot="progress-bar">
-                        <div class="update-bar"></div>
-                    </div>
-                    <button slot="ar-button" id="ar-button">
-                        View in your space 
-                    </button> 
-                    <!-- <div id="ar-prompt">
-                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-                    </div>  -->
+                    camera-controls
+                    poster="./images/chair2_2.png">
                 </model-viewer>
-                
-                <h3>Chair 1</h3>
+                <h3>Aluminum Chair</h3>
             </div>
-        </div>
-        
+
+            <!-- Office Chair -->
+            <div class="product-card">
+                <model-viewer src="./models/office_chair.glb"
+                    alt="Office Chair"
+                    ar
+                    auto-rotate
+                    camera-controls
+                    poster="./images/chair1_scanned_1.png">
+                </model-viewer>
+                <h3>Office Chair</h3>
+            </div>
+
+            <!-- Sofa -->
+            <div class="product-card">
+                <model-viewer src="./models/sofa.glb"
+                    alt="Sofa"
+                    ar
+                    auto-rotate
+                    camera-controls
+                    poster="./images/sofa1_2.png">
+                </model-viewer>
+                <h3>Comfortable Sofa</h3>
+            </div>
+        </div>    
     </section>
-    <!-- <model-viewer src="./models/chair-web.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="./images/office.jpeg"               skybox-image="./images/office.jpeg"
-    auto-rotate camera-controls></model-viewer>
-
-    <model-viewer src="./models/chair-web.glb" 
-                  loading="lazy" 
-                  poster="./images/chair-Camera.png" 
-                  ar ar-modes="webxr scene-viewer quick-look" 
-                  environment-image="./images/env-image.jpg" 
-                  auto-rotate 
-                  camera-controls
-                  activate-ar>
-        <div slot="fallback">
-            <img src="./images/chair-Camera.png" alt="Product Image">
-        </div>
-    </model-viewer>  -->
-    <!-- <model-viewer src="./models/blue.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="0.83" exposure="0.98" shadow-softness="1" auto-rotate>
-        <button class="Hotspot" slot="hotspot-1" data-position="-2.122729450019944m 6.3528683494874m -1.087863034892435m" data-normal="0.6937152609802381m 0.43328699663991826m -0.5753446925329891m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">test</div>
-        </button><button class="Hotspot" slot="hotspot-2" data-position="-0.33751406075809776m 4.536378128358802m 2.174487403137361m" data-normal="0.8293685336818727m 0.5070142951899551m -0.2347005321924379m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">here too</div>
-        </button>
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-
-    </model-viewer> -->
-    
-    <!-- <div class="variant-selection">
-        <button class="variant-button" data-variant-src="./models/pink.glb">Variant 1</button>
-
-        <button class="variant-button" data-variant-name="what">Variant 1</button>
-        <button class="variant-button" data-variant-name="variant2">Variant 2</button>
-        <button class="variant-button" data-variant-name="variant3">Variant 3</button>
-    </div> -->
-  
 </body>
 <script src="./js/script.js"></script>
-
-
 </html>

@@ -1,41 +1,91 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 80px;
     background-color: rgb(22, 15, 44);
     color: #e9e9e9;
 }
- 
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Heroshot.png'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 40rem;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.products {
+    padding: 2rem;
+}
+
+.products h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 60px;
+    padding: 60px;
+}
+
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure three items per row */
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product-card {
+    background: #333;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for square shape */
+    height: 300px; /* Fixed height for square shape */
+}
+
+.product-card model-viewer {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* This will cover the area without stretching */
+}
+
+.product-card h3 {
+    color: white;
+    margin: 1rem 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Adjust model-viewer poster and progress bar styling */
 model-viewer {
     --poster-color: transparent;
     --progress-bar-color: rgba(255, 255, 255, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
-}
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/hero.png);
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-}
-.hero h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background-color: #000; /* Background color for model viewer */
 }
 
-.products-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* Responsive grid for smaller screens */
+@media (max-width: 900px) {
+    .products-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens */
+    }
 }
-.product-card h3 {
-    text-align: center;
-    padding: 0.625rem;
-    margin: 0;
-}
-.product-card img {
-    width: 100%;
+
+@media (max-width: 600px) {
+    .products-gallery {
+        grid-template-columns: 1fr; /* 1 item per row for very small screens */
+    }
 }
